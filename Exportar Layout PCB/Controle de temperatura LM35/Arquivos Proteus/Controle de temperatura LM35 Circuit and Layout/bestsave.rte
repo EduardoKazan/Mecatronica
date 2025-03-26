@@ -1,0 +1,417 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00003 
+   (rule
+   )
+   (wire (path BOT 25400  -2116000 -1654000 -2127000 -1654000 -2127000 -1154000)
+    (connect (terminal pin R1-1) (terminal pin Q1-1))
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   (wire (path TOP 25400  -2000000 -1281000 -2413000 -1281000 -2413000 -1054000
+     -2700000 -1054000)
+    (connect (terminal pin Q1-0) (terminal pin "J COOLER"-0))
+   )
+   )
+   (Net #00007 
+   (rule
+   )
+   (wire (path BOT 25400  2173000 -1927000 2173000 -2159000 2200000 -2159000
+     2200000 -2300000)
+    (connect (terminal pin Q3-1) (terminal pin R2-1))
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path TOP 25400  3100000 -1500000 3100000 -1800000 2300000 -1800000)
+    (connect (terminal pin "5V RELAY"-1) (terminal pin Q3-0))
+   )
+   (wire (path BOT 25400  2300000 -1800000 2300000 -1416000)
+    (connect (terminal pin Q3-0) (terminal pin D1-0))
+   )
+   )
+   (Net #00046 
+   (rule
+   )
+   (wire (path BOT 25400  1700000 300000 1654000 254000 1300000 254000)
+    (connect (terminal pin D2-1) (terminal pin 7805-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  1700000 300000 1600000 400000 1600000 800000)
+    (connect (terminal pin D2-1) (terminal pin C4-0))
+    (type protect)
+   )
+   )
+   (Net #00049 
+   (rule
+   )
+   (wire (path BOT 25400  3000000 746000 2716000 462000 2716000 300000)
+    (connect (terminal pin POWER-1) (terminal pin D2-0))
+    (type protect)
+   )
+   )
+   (Net #00050 
+   (rule
+   )
+   (wire (path TOP 25400  4320000 -300000 4320000 -800000 5200000 -800000)
+    (connect (terminal pin "5V RELAY"-3) (terminal pin RELAY-0))
+   )
+   )
+   (Net #00051 
+   (rule
+   )
+   (wire (path TOP 25400  2900000 -900000 4318000 -900000 4318000 -1054000
+     5200000 -1054000)
+    (connect (terminal pin "5V RELAY"-2) (terminal pin RELAY-1))
+   )
+   )
+   (Net #00069 
+   (rule
+   )
+   (wire (path BOT 25400  -500000 1750000 -500000 2200000 -450000 2250000)
+    (connect (terminal pin "ARDUINO UNO"-0) (terminal pin SW2-2))
+    (type protect)
+   )
+   (wire (path BOT 25400  -500000 1750000 -1000000 1750000)
+    (connect (terminal pin "ARDUINO UNO"-0) (terminal pin R4-0))
+    (type protect)
+   )
+   )
+   (Net #00080 
+   (rule
+   )
+   (wire (path BOT 25400  0 2900000 -450000 2900000)
+    (connect (terminal pin SW2-1) (terminal pin SW2-3))
+    (type protect)
+   )
+   )
+   (Net +5V 
+   (rule
+   )
+   (wire (path TOP 25400  700000 -254000 1016000 -254000 1016000 2064800
+     -698500 2064800 -698500 4146000 -1700000 4146000)
+    (connect (terminal pin C5-0) (terminal pin "J LCD"-1))
+   )
+   (wire (path BOT 25400  1016000 -254000 1300000 -254000)
+    (connect (terminal wire) (terminal pin 7805-2))
+    (type protect)
+   )
+   (wire (path BOT 25400  262000 -282000 290000 -254000 700000 -254000)
+    (connect (terminal pin "ARDUINO UNO"-19) (terminal pin C5-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  700000 -254000 1016000 -254000)
+    (connect (terminal pin C5-0) (terminal wire))
+    (type protect)
+   )
+   )
+   (Net A0 
+   (rule
+   )
+   (wire (path TOP 25400  262000 480000 63500 480000 63500 -917000
+     381000 -917000 381000 -954000 1300000 -954000)
+    (connect (terminal pin "ARDUINO UNO"-22) (terminal pin U2-1))
+   )
+   )
+   (Net D10 
+   (rule
+   )
+   (wire (path TOP 25400  262000 -1298000 127000 -1298000 127000 -1654000
+     -1100000 -1654000)
+    (connect (terminal pin "ARDUINO UNO"-15) (terminal pin R1-0))
+   )
+   )
+   (Net D11 
+   (rule
+   )
+   )
+   (Net D12 
+   (rule
+   )
+   )
+   (Net D13 
+   (rule
+   )
+   (wire (path BOT 25400  262000 -536000 381000 -536000 381000 -2300000
+     1184000 -2300000)
+    (connect (terminal pin "ARDUINO UNO"-18) (terminal pin R2-0))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 25400  -1700000 4400000 -254000 4400000 -254000 2603500
+     0 2603500 0 2250000)
+    (connect (terminal pin "J LCD"-0) (terminal pin SW2-0))
+   )
+   (wire (path BOT 25400  1460500 -1208000 1460500 -1270000 2046000 -1270000
+     2046000 -1800000)
+    (connect (terminal wire) (terminal pin Q3-2))
+   )
+   (wire (path BOT 25400  1192000 1500000 1192000 1263815 1346000 1263815
+     1346000 800000)
+    (connect (terminal smd "I2C EXPANDER"-7) (terminal pin C4-1))
+   )
+   (wire (path BOT 25400  1300000 0 1460500 0 1460500 -1208000)
+    (connect (terminal pin 7805-1) (terminal wire))
+   )
+   (wire (path TOP 25400  -2000000 -1027000 -2222500 -1027000 -2222500 -800000
+     -2700000 -800000)
+    (connect (terminal pin Q1-2) (terminal pin "J COOLER"-1))
+   )
+   (wire (path BOT 25400  -792000 -1000000 -1079500 -1000000 -1079500 -1143000
+     -1714500 -1143000 -1714500 -1027000 -2000000 -1027000)
+    (connect (terminal pin C3-0) (terminal pin Q1-2))
+   )
+   (wire (path BOT 25400  -762000 0 -762000 -508000 -792000 -508000
+     -792000 -1000000)
+    (connect (terminal wire) (terminal pin C3-0))
+   )
+   (wire (path BOT 25400  -762000 0 -762000 63500 -750000 63500
+     -750000 650000)
+    (connect (terminal wire) (terminal pin C2-0))
+   )
+   (wire (path BOT 25400  -762000 0 -698500 0 -698500 -28000
+     -500000 -28000)
+    (connect (terminal wire) (terminal pin "ARDUINO UNO"-7))
+   )
+   (wire (path BOT 25400  1954000 1500001 1954000 1000000)
+    (connect (terminal smd "I2C EXPANDER"-1) (terminal wire))
+   )
+   (wire (path BOT 25400  2081000 1500001 2081000 1000000)
+    (connect (terminal smd "I2C EXPANDER"-0) (terminal wire))
+   )
+   (wire (path BOT 25400  1827000 1000000 1827000 1500000)
+    (connect (terminal wire) (terminal smd "I2C EXPANDER"-2))
+   )
+   (wire (path BOT 25400  1460500 -1208000 1300000 -1208000)
+    (connect (terminal wire) (terminal pin U2-2))
+   )
+   (wire (path BOT 25400  1827000 1000000 1954000 1000000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  1587500 1000000 1827000 1000000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  1954000 1000000 2081000 1000000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  2081000 1000000 3000000 1000000)
+    (connect (terminal wire) (terminal pin POWER-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  262000 226000 363989 327989 363989 1886011
+     0 2250000)
+    (connect (terminal pin "ARDUINO UNO"-21) (terminal pin SW2-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  -500000 -28000 8000 -28000 262000 226000)
+    (connect (terminal pin "ARDUINO UNO"-7) (terminal pin "ARDUINO UNO"-21))
+    (type protect)
+   )
+   (wire (path BOT 25400  262000 226000 474000 226000 700000 0)
+    (connect (terminal pin "ARDUINO UNO"-21) (terminal pin C5-1))
+    (type protect)
+   )
+   (wire (path BOT 25400  1290025 0 1159949 130076 1159949 613949
+     1346000 800000)
+    (connect (terminal wire) (terminal pin C4-1))
+    (type protect)
+   )
+   (wire (path BOT 25400  1346000 800000 1546000 1000000 1587500 1000000)
+    (connect (terminal pin C4-1) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  1290025 0 1300000 0)
+    (connect (terminal wire) (terminal pin 7805-1))
+    (type protect)
+   )
+   (wire (path BOT 25400  700000 0 1290025 0)
+    (connect (terminal pin C5-1) (terminal wire))
+    (type protect)
+   )
+   )
+   (Net Q0 
+   (rule
+   )
+   )
+   (Net Q1 
+   (rule
+   )
+   )
+   (Net Q2 
+   (rule
+   )
+   )
+   (Net Q3 
+   (rule
+   )
+   )
+   (Net SCL 
+   (rule
+   )
+   (wire (path BOT 25400  -1700000 3638000 -1700000 2540000 635000 2540000
+     635000 1968500)
+    (connect (terminal pin "J LCD"-3) (terminal wire))
+   )
+   (wire (path TOP 25400  635000 1841500 635000 1748001 262000 1748001)
+    (connect (terminal via) (terminal pin "ARDUINO UNO"-27))
+   )
+   (wire (path BOT 25400  635000 1841500 1826999 1841500 1826999 2020700)
+    (connect (terminal via) (terminal smd "I2C EXPANDER"-13))
+   )
+   (wire (path BOT 25400  635000 1968500 635000 1841500)
+    (connect (terminal wire) (terminal via))
+   )
+   (via $VIA_SIGNAL 635000 1841500)
+   )
+   (Net SDA 
+   (rule
+   )
+   (wire (path BOT 25400  -1700000 3892000 -1905000 3892000 -1905000 2476500
+     -254000 2476500)
+    (connect (terminal pin "J LCD"-2) (terminal wire))
+   )
+   (wire (path BOT 25400  1954000 2020700 1954000 1714500 444500 1714500
+     444500 2476500 -254000 2476500)
+    (connect (terminal smd "I2C EXPANDER"-14) (terminal wire))
+   )
+   (wire (path BOT 25400  262000 1496001 -254000 1496001 -254000 2476500)
+    (connect (terminal pin "ARDUINO UNO"-26) (terminal wire))
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 25400  889000 1016000 889000 1651000 2081000 1651000
+     2081000 2020700)
+    (connect (terminal via) (terminal smd "I2C EXPANDER"-15))
+   )
+   (wire (path TOP 25400  -500000 226000 -286406 226000 -286406 861000
+     762000 861000 762000 996033 889000 996033 889000 1016000)
+    (connect (terminal pin "ARDUINO UNO"-6) (terminal via))
+   )
+   (via $VIA_POWER 889000 1016000)
+   )
+   (Net VCC_MCU 
+   (rule
+   )
+   (wire (path TOP 25400  262000 -28000 381000 -28000 381000 -700000
+     1300000 -700000)
+    (connect (terminal pin "ARDUINO UNO"-20) (terminal pin U2-0))
+   )
+   (wire (path TOP 25400  1300000 -700000 2032000 -700000 2032000 -400000
+     2300000 -400000)
+    (connect (terminal pin U2-0) (terminal pin D1-1))
+   )
+   (wire (path BOT 25400  2300000 -400000 2566497 -400000 2566497 -300000
+     3100000 -300000)
+    (connect (terminal pin D1-1) (terminal pin "5V RELAY"-0))
+   )
+   )
+   (Net XTAL1 
+   (rule
+   )
+   (wire (path BOT 25400  -1000000 0 -1258000 0 -1258000 650000)
+    (connect (terminal pin X1-0) (terminal pin C2-1))
+   )
+   (wire (path TOP 25400  -500000 -282000 -1000000 -282000 -1000000 0)
+    (connect (terminal pin "ARDUINO UNO"-8) (terminal pin X1-0))
+   )
+   )
+   (Net XTAL2 
+   (rule
+   )
+   (wire (path BOT 25400  -1000000 -508000 -1300000 -508000 -1300000 -1000000)
+    (connect (terminal pin X1-1) (terminal pin C3-1))
+   )
+   (wire (path TOP 25400  -500000 -536000 -635000 -536000 -635000 -508000
+     -1000000 -508000)
+    (connect (terminal pin "ARDUINO UNO"-9) (terminal pin X1-1))
+   )
+   )
+  )
+ )
